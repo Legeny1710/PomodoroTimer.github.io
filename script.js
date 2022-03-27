@@ -45,9 +45,9 @@ function resumeTimer() {
 
 StartBtn.addEventListener("click", function () {
     clearTimeout(id)
-    startTimer(20, 00);
+    startTimer(25, 00);
     document.body.style.background = "crimson"
-    TextEl2.textContent = "20 MINUTE SESSION"
+    TextEl2.textContent = "25 MINUTE SESSION"
 }, false);
 
 
