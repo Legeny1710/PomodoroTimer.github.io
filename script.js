@@ -10,6 +10,8 @@ var finished = false
 var id;
 var value = "00:00";
 
+const audio = new Audio()
+audio.src = "./ring.mp3"
 
 
 function startTimer(m, s) {
@@ -17,6 +19,7 @@ function startTimer(m, s) {
     if (s == 0) {
         if (m == 0) {
             TextEl.textContent = "Time is UP!"
+            audio.play()
             return;
         } else if (m != 0) {
             m = m - 1;
